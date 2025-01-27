@@ -23,7 +23,7 @@ There are many features I have not yet implemented, so it remains unfinished.
 7. 3D physics (for testing with 3d objects)
 8. Scripting
 9. Shader design
-10. Appending files
+10. Appending Files
 11. More...
 
 
