@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WAclf0mAWas=",
+  "dgSpecHash": "FUcqsRvu2LE=",
   "success": true,
-  "projectFilePath": "C:\\Perseverance Calculator Official - GitHub\\Perseverance Calculator 1\\Perseverance Calculator 1.csproj",
+  "projectFilePath": "C:\\PC Test - Github\\Perseverance_Calculator\\Perseverance Calculator 1\\Perseverance Calculator 1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Gaming Laptop\\.nuget\\packages\\communitytoolkit.common\\8.2.1\\communitytoolkit.common.8.2.1.nupkg.sha512",
     "C:\\Users\\Gaming Laptop\\.nuget\\packages\\communitytoolkit.winui.controls.primitives\\8.0.240109\\communitytoolkit.winui.controls.primitives.8.0.240109.nupkg.sha512",
