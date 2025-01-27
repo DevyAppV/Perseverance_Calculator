@@ -32,7 +32,7 @@ I had a lot of ideas about this app, but unfortunately, I am not a mathematician
 
 
 <strong>About:</strong><br/>
-This is one of my first app before I attended University and learned C# from there.  It doesn't use any known design pattern (or one that I know of).  It uses Models, Views, and Logic.  
+This is one of my first app before I attended University and learned C# from there.  It doesn't use any known design pattern (or one that I know of).  It is built with WinUI 3 and it uses Models, Views, and Logic.  
 There is no controller or viewmodel, they are just logic.  The "Pages" folder should be within the "View" folder.
 
 
