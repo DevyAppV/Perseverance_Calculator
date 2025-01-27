@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="Perseverance_Calculator_1.Pages.Data_Spreadsheet"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Perseverance_Calculator_1.Pages"
+    xmlns:mvvm="using:Perseverance_Calculator_1.Model.MVVM"
+    xmlns:model="using:Perseverance_Calculator_1.Model"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:CommunityToolkit.WinUI.Controls"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    RequestedTheme="Dark"
+    >
+
+    <ScrollViewer HorizontalScrollMode="Auto" VerticalScrollMode="Auto" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+        <Grid x:Name="Grid_Main" Background="Black">
+
+            <Grid.Resources>
+
+                <SolidColorBrush x:Key="SearchPlaceHolderForeground" Color="#FF0EFF0E"/>
+                <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#FF0090FF"/>
+                <SolidColorBrush x:Key="DeleteXColor" Color="Red"/>
+                <SolidColorBrush x:Key="DeleteXColorBackground" Color="#FF101010"/>
+
+                <Style TargetType="Button">
+                    <Setter Property="Background" >
+                        <Setter.Value>
+                            <SolidColorBrush Color="#0003B4C1" Opacity="1"/>
+                        </Setter.Value>
+                    </Setter>
+                    <Setter Property="Foreground" Value="#FF0090FF" />
+                    <Setter Property="BorderBrush" Value="#000090FF" />
+
+                </Style>
+
+                <Style TargetType="TextBlock">
+                    <Setter Property="Foreground" Value="#FF0EFF0E" />
+                </Style>
+
+                <Style TargetType="TextBox">
+                    <Setter Property="PlaceholderForeground" Value="DeepSkyBlue" />
+                </Style>
+            </Grid.Resources>
+
+
+
+
+
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="500"></ColumnDefinition>
+                <ColumnDefinition Width="10"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+
+
+            <Button Grid.Column="1" Grid.Row="0" Grid.RowSpan="4" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+            Background="#FF252525" Foreground="Black" Padding="0" Margin="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+            Click="Button_HideShow_ProjectExplorer_Click">
+            </Button>
+
+
+            <!--LEFT-->
+
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Save Data" Margin='2' Click="Button_SaveData_Click"></Button>
+                <Button Content="Load Data" Margin='2' Click="Button_LoadData_Click"></Button>
+                <TextBlock x:Name="Textblock_LoadedSpreadsheet" Text="Loaded Spreadsheet" VerticalAlignment="Center" Margin='2'></TextBlock>
+            </StackPanel>
+
+            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Grid.Row="1">
+                <StackPanel Orientation="Horizontal">
+                    <Button Content="Add Spreadsheet" Margin='2' Click="Button_AddSpreadsheet_Click"></Button>
+                    <TextBox x:Name="Textbox_DataSpreadsheetName" IsSpellCheckEnabled="False" PlaceholderText="Spreadsheet Name" VerticalAlignment="Center" Margin='2'></TextBox>
+
+                </StackPanel>
+            </ScrollViewer>
+
+
+            <ScrollViewer Margin="5" Grid.Column="0" Grid.Row="2" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+                <StackPanel Orientation="Vertical">
+                    <StackPanel.Resources>
+                        <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#FF0EFF0E"/>
+                        <Style TargetType="Button">
+                            <Setter Property="Foreground" Value="#FF0EFF0E"></Setter>
+                            <Setter Property="BorderBrush" Value="#000EFF0E"></Setter>
+                            <Setter Property="Background" Value="#00DCDCDC"></Setter>
+                        </Style>
+                    </StackPanel.Resources>
+                    <ItemsControl ItemsSource="{x:Bind mvvm:DataDataCollection_Project_MVVM.dataDataCollectionProject}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate x:DataType="mvvm:DataDataCollection">
+
+                                <StackPanel Orientation="Horizontal">
+                                    <Button Content="X" Grid.Column="1" Margin="2" Foreground="{StaticResource DeleteXColor}" Background="{StaticResource DeleteXColorBackground}" Click="Button_RemoveSelectedProject_Click" Tag="{x:Bind}">
+                                        <Button.Resources>
+                                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Red"/>
+                                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#FF101010"/>
+                                        </Button.Resources>
+                                    </Button>
+                                    <Button Content="{x:Bind projectName, Mode=OneWay}" Grid.Column="0" Margin="2" Click="Button_ProjectSelection_Click" Tag="{x:Bind}"></Button>
+                                </StackPanel>
+
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </StackPanel>
+            </ScrollViewer>
+
+
+
+
+
+            <!--RIGHT-->
+
+            <!--<StackPanel Orientation="Horizontal" Grid.Column="1">
+        <Button Content="Add Data"></Button>
+    </StackPanel>-->
+
+            <StackPanel Orientation="Horizontal" Grid.Column="2" Grid.Row="0">
+                <Button Content="Add Data" Margin="2" Click="Button_AddData_Click"></Button>
+                <Button Content="Search" Margin="2" Click="Button_SearchData_Click"></Button>
+                <TextBox x:Name="Textbox_SearchData" IsSpellCheckEnabled="False" PlaceholderText="Search Data" Margin="2" VerticalAlignment="Center" PlaceholderForeground="{StaticResource SearchPlaceHolderForeground}" ScrollViewer.HorizontalScrollMode="Auto"></TextBox>
+            </StackPanel>
+            <ScrollViewer Grid.Column="2" Grid.Row="2" Grid.RowSpan="2" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                <StackPanel Orientation="Vertical">
+                    <StackPanel Orientation="Vertical">
+
+                        <ItemsControl x:Name="ItemsControl_DataDataList">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate x:DataType="model:DataData">
+
+                                    <StackPanel Orientation="Vertical" Visibility="{x:Bind searchVisibility, Mode=OneWay}">
+
+                                        <controls:WrapPanel Orientation="Horizontal">
+
+                                            <Button Content="X" Margin="2" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="{StaticResource DeleteXColor}" Background="{StaticResource DeleteXColorBackground}" Tag="{x:Bind}" Click="Button_RemoveDataType_Click" IsTabStop="False">
+                                                <Button.Resources>
+                                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Red"/>
+                                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#FF101010"/>
+                                                </Button.Resources>
+                                            </Button>
+                                            <Button Content="Set Data" Margin="2" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="Black" Background="DeepSkyBlue" IsEnabled="{x:Bind dataChanged,Mode=OneWay}" Click="Button_SetData_Click" Tag="{x:Bind}" IsTabStop="False">
+                                                <Button.Resources>
+                                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Black"/>
+                                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="DeepSkyBlue"/>
+                                                </Button.Resources>
+                                            </Button>
+                                            <TextBox Text="{x:Bind dataName,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" PlaceholderText="Data Name" HorizontalAlignment="Stretch" Margin="2" AcceptsReturn="True" 
+                                              ScrollViewer.VerticalScrollMode="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollMode="Auto"
+                                             Tag="{x:Bind}" TextChanged="Textbox_dataNameType_TextChanged" BeforeTextChanging="TextBox_dataNameType_BeforeTextChanging" IsSpellCheckEnabled="False" GotFocus="TextBox_DataName_GotFocus"></TextBox>
+                                            <TextBox Text="{x:Bind value,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" IsSpellCheckEnabled="False" PlaceholderText="Data Value" Margin="2" AcceptsReturn="True" Tag="{x:Bind}" TextChanged="Textbox_dataValue_TextChanged" GotFocus="TextBox_DataValue_GotFocus"></TextBox>
+                                            <TextBox Text="{x:Bind description,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" IsSpellCheckEnabled="False" PlaceholderText="Data Description" Margin="2" AcceptsReturn="True" GotFocus="TextBox_DataDescription_GotFocus"></TextBox>
+
+                                        </controls:WrapPanel>
+
+                                    </StackPanel>
+
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+
+                    </StackPanel>
+                </StackPanel>
+            </ScrollViewer>
+
+        </Grid>
+    </ScrollViewer>
+</Page>

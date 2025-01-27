@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Perseverance Calculator 1 (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Perseverance Calculator 1 (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

@@ -1,0 +1,1 @@
+C:\Perseverance Calculator Official\Perseverance Calculator 1\bin\x64\Debug\net8.0-windows10.0.19041.0\AppPackages\Perseverance Calculator 1_1.0.18.0_Debug_Test\Perseverance Calculator 1_1.0.18.0_x64_Debug.msix

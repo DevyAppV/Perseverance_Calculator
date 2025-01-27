@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Source>C:\Users\Gaming Laptop\Desktop\Projects\Perseverance Calculator 1\Perseverance Calculator 1\Assets\Perseverance Icon.png</Source>
+    <SmallTileSource>C:\Users\Gaming Laptop\Desktop\Projects\Perseverance Calculator 1\Perseverance Calculator 1\Assets\Perseverance Icon.png</SmallTileSource>
+    <MediumTileSource>C:\Users\Gaming Laptop\Desktop\Projects\Perseverance Calculator 1\Perseverance Calculator 1\Assets\Perseverance Icon.png</MediumTileSource>
+    <WideTileSource>C:\Users\Gaming Laptop\Desktop\Projects\Perseverance Calculator 1\Perseverance Calculator 1\Assets\Perseverance Icon.png</WideTileSource>
+    <LargeTileSource>C:\Users\Gaming Laptop\Desktop\Projects\Perseverance Calculator 1\Perseverance Calculator 1\Assets\Perseverance Icon.png</LargeTileSource>
+    <AppIconSource>C:\Users\Gaming Laptop\Desktop\Projects\Perseverance Calculator 1\Perseverance Calculator 1\Assets\Perseverance Icon.png</AppIconSource>
+    <SplashScreenSource>C:\Users\Gaming Laptop\Desktop\Projects\Perseverance Calculator 1\Perseverance Calculator 1\Assets\Perseverance Icon.png</SplashScreenSource>
+    <PackageLogoSource>C:\Users\Gaming Laptop\Desktop\Projects\Perseverance Calculator 1\Perseverance Calculator 1\Assets\Perseverance Icon.png</PackageLogoSource>
+    <AppxShowAllApps>True</AppxShowAllApps>
+    <UapAppxPackageBuildMode>StoreAndSideload</UapAppxPackageBuildMode>
+    <AppxBuildConfigurationSelection>x64</AppxBuildConfigurationSelection>
+    <PackageOptionalProjectsInIdeBuilds>False</PackageOptionalProjectsInIdeBuilds>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Update="App.xaml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </None>
+    <Page Update="Pages\Visual2D_Graph.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\QuickSavePrompt.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\LoadingScreen.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Graph.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Data Spreadsheet.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\ButtonDescription.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,1 @@
+C:\Perseverance Calculator Official\Perseverance Calculator 1\Perseverance Calculator 1.csproj;x64

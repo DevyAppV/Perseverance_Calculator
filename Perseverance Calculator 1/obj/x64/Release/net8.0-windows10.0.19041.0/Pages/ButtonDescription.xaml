@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page x:ConnectionId='1'
+    x:Class="Perseverance_Calculator_1.Pages.ButtonDescription"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Perseverance_Calculator_1.Pages"
+    xmlns:model="using:Perseverance_Calculator_1.Model"
+    xmlns:mvvm="using:Perseverance_Calculator_1.Model.MVVM"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    
+    RequestedTheme="Dark">
+
+    <ScrollViewer HorizontalScrollMode="Auto" VerticalScrollMode="Auto" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+        <Grid Background="Black">
+            <Grid.Resources>
+                <SolidColorBrush x:Key="TextblockDescription" Color="#FF2AFF2A"/>
+                <SolidColorBrush x:Key="TextboxDisabledForeground" Color="White"/>
+                <SolidColorBrush x:Key="VariableDescriptionColor" Color="DeepSkyBlue"/>
+
+                <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#FF0090FF"/>
+
+                <Style TargetType="Button">
+                    <Setter Property="Background" >
+                        <Setter.Value>
+                            <SolidColorBrush Color="#0003B4C1" Opacity="1"/>
+                        </Setter.Value>
+                    </Setter>
+                    <Setter Property="Foreground" Value="#FF0090FF" />
+                    <Setter Property="BorderBrush" Value="#000090FF" />
+
+                </Style>
+            </Grid.Resources>
+            <ScrollViewer>
+                <StackPanel Margin="20">
+
+                    <StackPanel Orientation="Horizontal">
+                        <StackPanel.Resources>
+
+                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="DeepSkyBlue"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Black"/>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="DeepSkyBlue"></Setter>
+                                <Setter Property="Foreground" Value="Black"></Setter>
+                            </Style>
+                        </StackPanel.Resources>
+                        <Button x:ConnectionId='13' Content="Get Variables" Margin="2"                                               ></Button>
+                        <Button x:ConnectionId='14' Content="Solve And Set As Button" Margin="2"                                              ></Button>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" >
+                        <TextBlock Text="Formula Name:" Margin="15" Foreground="{StaticResource TextblockDescription}" VerticalAlignment="Top"></TextBlock>
+                        <TextBox x:ConnectionId='12' x:Name="formulaName_Tbox" PlaceholderForeground="{StaticResource VariableDescriptionColor}" PlaceholderText="Formula Name" AcceptsReturn="False"                                                                                                                                                 Margin="10" TextWrapping="Wrap" MinWidth="710" MaxWidth="1220" Foreground="{StaticResource TextboxDisabledForeground}"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Formula:" Margin="15" Foreground="{StaticResource TextblockDescription}" VerticalAlignment="Top"></TextBlock>
+                        <TextBox x:ConnectionId='11' AcceptsReturn="True" PlaceholderForeground="{StaticResource VariableDescriptionColor}" PlaceholderText="Formula"                                                                                                                                             Margin="10" TextWrapping="Wrap" MinWidth="710" MaxHeight="500" ScrollViewer.VerticalScrollBarVisibility="Auto" MaxWidth="1220" Foreground="{StaticResource TextboxDisabledForeground}"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Rearranged:" Margin="15" Foreground="{StaticResource TextblockDescription}" VerticalAlignment="Top"></TextBlock>
+                        <ScrollViewer MaxHeight="500" VerticalAlignment="Top">
+                            <TextBlock x:ConnectionId='10'                                                                                                                                                       Margin="10" TextWrapping="Wrap" MinWidth="710" MaxWidth="1220"  Foreground="{StaticResource TextboxDisabledForeground}"></TextBlock>
+                        </ScrollViewer>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Use:" Margin="15" Foreground="{StaticResource TextblockDescription}" VerticalAlignment="Top"></TextBlock>
+                        <ScrollViewer MaxHeight="500" VerticalAlignment="Top">
+                            <TextBlock x:ConnectionId='9'                                                                                                                              Margin="10" TextWrapping="Wrap" MinWidth="710" MaxWidth="1220" ScrollViewer.VerticalScrollBarVisibility="Auto" Foreground="{StaticResource TextboxDisabledForeground}"></TextBlock>
+                        </ScrollViewer>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Description:" Margin="15" Foreground="{StaticResource TextblockDescription}" VerticalAlignment="Top"></TextBlock>
+                        <TextBox x:ConnectionId='8' AcceptsReturn="True" PlaceholderForeground="{StaticResource VariableDescriptionColor}" PlaceholderText="Description"                                                                                                                                                 Margin="10" TextWrapping="Wrap" MinWidth="710" MaxWidth="1220" MaxHeight="500" ScrollViewer.VerticalScrollBarVisibility="Auto" Foreground="{StaticResource TextboxDisabledForeground}"></TextBox>
+                    </StackPanel>
+
+                    <ScrollViewer Margin="15" HorizontalAlignment="Left" HorizontalScrollMode="Auto" VerticalScrollMode="Auto" Width="1230" MaxWidth="1230" MaxHeight="500">
+                        <StackPanel Orientation="Vertical">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Variable Name" Width="260" Margin="2" TextWrapping="Wrap" Foreground="{StaticResource VariableDescriptionColor}"></TextBlock>
+                                <TextBlock Text="Value" Width="260" Margin="2" TextWrapping="Wrap" Foreground="{StaticResource VariableDescriptionColor}"></TextBlock>
+                                <TextBlock Text="Description" Width="260" Margin="2" TextWrapping="Wrap" Foreground="{StaticResource VariableDescriptionColor}"></TextBlock>
+                            </StackPanel>
+                            <ItemsControl x:ConnectionId='2'                                                                                                             >
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate                                >
+
+                                        <ScrollViewer x:ConnectionId='4'>
+                                            <StackPanel Orientation="Vertical">
+                                                <StackPanel Orientation="Horizontal">
+                                                    <TextBlock x:ConnectionId='5'                                                                      MinWidth="260" MaxWidth="260" Margin="2" TextWrapping="Wrap"></TextBlock>
+                                                    <TextBox x:ConnectionId='6' AcceptsReturn="True" PlaceholderForeground="{StaticResource VariableDescriptionColor}" PlaceholderText="Variable Value"                                                                       MinWidth="260" MaxWidth="260" Margin="2" TextWrapping="Wrap"></TextBox>
+                                                    <TextBox x:ConnectionId='7' AcceptsReturn="True" PlaceholderForeground="{StaticResource VariableDescriptionColor}" PlaceholderText="Variable Description"                                                                             MinWidth="260" MaxWidth="700" Margin="2" TextWrapping="Wrap"></TextBox>
+                                                </StackPanel>
+                                            </StackPanel>
+                                        </ScrollViewer>
+
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+
+
+                        </StackPanel>
+                    </ScrollViewer>
+
+                    <!--TODO: new feature-->
+                    <!--<StackPanel Orientation="Vertical" Background="#242424">
+                        --><!--<CheckBox Content="Is on function rearrange between (=) modified"></CheckBox>--><!--
+                        <CheckBox Content="Use another function where 'x' = left/right expression: function(left/right expression)" IsChecked="{x:Bind local:ButtonDescription.buttonDescription_CustomFunction.rearrange_UseAnotherFunction,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></CheckBox>
+                        <TextBox Margin="20" Text="{x:Bind local:ButtonDescription.buttonDescription_CustomFunction.rearrange_UseAnotherFunction_Function,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                        
+                        <CheckBox Content="Change other side to plusMinus: (+/-)" IsChecked="{x:Bind local:ButtonDescription.buttonDescription_CustomFunction.rearrange_ChangeOtherSide_ToPlusMinus,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></CheckBox>
+                        <CheckBox Content="Reverse inequality signs" IsChecked="{x:Bind local:ButtonDescription.buttonDescription_CustomFunction.rearrange_ReverseInequalitySign,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></CheckBox>
+                    </StackPanel>-->
+
+                </StackPanel>
+
+
+
+            </ScrollViewer>
+        </Grid>
+    </ScrollViewer>
+</Page>
+

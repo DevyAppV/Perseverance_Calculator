@@ -1,0 +1,37 @@
+C:\Perseverance Calculator Official\Perseverance Calculator 1\bin\x64\Debug\net8.0-windows10.0.19041.0\publish\Perseverance Calculator 1.exe
+C:\Perseverance Calculator Official\Perseverance Calculator 1\bin\x64\Debug\net8.0-windows10.0.19041.0\publish\Perseverance Calculator 1.dll
+C:\Perseverance Calculator Official\Perseverance Calculator 1\bin\x64\Debug\net8.0-windows10.0.19041.0\publish\Perseverance Calculator 1.deps.json
+C:\Perseverance Calculator Official\Perseverance Calculator 1\bin\x64\Debug\net8.0-windows10.0.19041.0\publish\Perseverance Calculator 1.runtimeconfig.json
+C:\Perseverance Calculator Official\Perseverance Calculator 1\bin\x64\Debug\net8.0-windows10.0.19041.0\publish\Perseverance Calculator 1.pdb
+C:\Perseverance Calculator Official\Perseverance Calculator 1\bin\x64\Debug\net8.0-windows10.0.19041.0\publish\Microsoft.Windows.SDK.NET.dll
+C:\Perseverance Calculator Official\Perseverance Calculator 1\bin\x64\Debug\net8.0-windows10.0.19041.0\publish\WinRT.Runtime.dll
+C:\Perseverance Calculator Official\Perseverance Calculator 1\bin\x64\Debug\net8.0-windows10.0.19041.0\publish\CommunityToolkit.Common.dll
+C:\Perseverance Calculator Official\Perseverance Calculator 1\bin\x64\Debug\net8.0-windows10.0.19041.0\publish\CommunityToolkit.WinUI.Controls.Primitives.dll
+C:\Perseverance Calculator Official\Perseverance Calculator 1\bin\x64\Debug\net8.0-windows10.0.19041.0\publish\CommunityToolkit.WinUI.Extensions.dll
+C:\Perseverance Calculator Official\Perseverance Calculator 1\bin\x64\Debug\net8.0-windows10.0.19041.0\publish\Microsoft.Graphics.Canvas.Interop.dll
+C:\Perseverance Calculator Official\Perseverance Calculator 1\bin\x64\Debug\net8.0-windows10.0.19041.0\publish\Microsoft.InteractiveExperiences.Projection.dll
+C:\Perseverance Calculator Official\Perseverance Calculator 1\bin\x64\Debug\net8.0-windows10.0.19041.0\publish\Microsoft.WinUI.dll
+C:\Perseverance Calculator Official\Perseverance Calculator 1\bin\x64\Debug\net8.0-windows10.0.19041.0\publish\Microsoft.Windows.AppLifecycle.Projection.dll
+C:\Perseverance Calculator Official\Perseverance Calculator 1\bin\x64\Debug\net8.0-windows10.0.19041.0\publish\Microsoft.Windows.AppNotifications.Builder.Projection.dll
+C:\Perseverance Calculator Official\Perseverance Calculator 1\bin\x64\Debug\net8.0-windows10.0.19041.0\publish\Microsoft.Windows.AppNotifications.Projection.dll
+C:\Perseverance Calculator Official\Perseverance Calculator 1\bin\x64\Debug\net8.0-windows10.0.19041.0\publish\Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll
+C:\Perseverance Calculator Official\Perseverance Calculator 1\bin\x64\Debug\net8.0-windows10.0.19041.0\publish\Microsoft.Windows.ApplicationModel.Resources.Projection.dll
+C:\Perseverance Calculator Official\Perseverance Calculator 1\bin\x64\Debug\net8.0-windows10.0.19041.0\publish\Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll
+C:\Perseverance Calculator Official\Perseverance Calculator 1\bin\x64\Debug\net8.0-windows10.0.19041.0\publish\Microsoft.Windows.Management.Deployment.Projection.dll
+C:\Perseverance Calculator Official\Perseverance Calculator 1\bin\x64\Debug\net8.0-windows10.0.19041.0\publish\Microsoft.Windows.PushNotifications.Projection.dll
+C:\Perseverance Calculator Official\Perseverance Calculator 1\bin\x64\Debug\net8.0-windows10.0.19041.0\publish\Microsoft.Windows.Security.AccessControl.Projection.dll
+C:\Perseverance Calculator Official\Perseverance Calculator 1\bin\x64\Debug\net8.0-windows10.0.19041.0\publish\Microsoft.Windows.System.Power.Projection.dll
+C:\Perseverance Calculator Official\Perseverance Calculator 1\bin\x64\Debug\net8.0-windows10.0.19041.0\publish\Microsoft.Windows.System.Projection.dll
+C:\Perseverance Calculator Official\Perseverance Calculator 1\bin\x64\Debug\net8.0-windows10.0.19041.0\publish\Microsoft.Windows.Widgets.Projection.dll
+C:\Perseverance Calculator Official\Perseverance Calculator 1\bin\x64\Debug\net8.0-windows10.0.19041.0\publish\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll
+C:\Perseverance Calculator Official\Perseverance Calculator 1\bin\x64\Debug\net8.0-windows10.0.19041.0\publish\runtimes\win-arm64\native\Microsoft.Graphics.Canvas.dll
+C:\Perseverance Calculator Official\Perseverance Calculator 1\bin\x64\Debug\net8.0-windows10.0.19041.0\publish\runtimes\win-x64\native\Microsoft.Graphics.Canvas.dll
+C:\Perseverance Calculator Official\Perseverance Calculator 1\bin\x64\Debug\net8.0-windows10.0.19041.0\publish\runtimes\win-x86\native\Microsoft.Graphics.Canvas.dll
+C:\Perseverance Calculator Official\Perseverance Calculator 1\bin\x64\Debug\net8.0-windows10.0.19041.0\publish\runtimes\win-arm64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll
+C:\Perseverance Calculator Official\Perseverance Calculator 1\bin\x64\Debug\net8.0-windows10.0.19041.0\publish\runtimes\win-x64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll
+C:\Perseverance Calculator Official\Perseverance Calculator 1\bin\x64\Debug\net8.0-windows10.0.19041.0\publish\runtimes\win-x86\native\Microsoft.WindowsAppRuntime.Bootstrap.dll
+C:\Perseverance Calculator Official\Perseverance Calculator 1\bin\x64\Debug\net8.0-windows10.0.19041.0\publish\runtimes\win10-arm64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll
+C:\Perseverance Calculator Official\Perseverance Calculator 1\bin\x64\Debug\net8.0-windows10.0.19041.0\publish\runtimes\win10-x64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll
+C:\Perseverance Calculator Official\Perseverance Calculator 1\bin\x64\Debug\net8.0-windows10.0.19041.0\publish\runtimes\win10-x86\native\Microsoft.WindowsAppRuntime.Bootstrap.dll
+C:\Perseverance Calculator Official\Perseverance Calculator 1\bin\x64\Debug\net8.0-windows10.0.19041.0\publish\Microsoft.Graphics.Canvas.dll
+C:\Perseverance Calculator Official\Perseverance Calculator 1\bin\x64\Debug\net8.0-windows10.0.19041.0\publish\resources.pri
