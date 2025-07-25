@@ -3,6 +3,7 @@
 
 <strong>Intro:</strong><br/>
 This is a calculator with customizable buttons.  It also alows you to design math expressions or formulas with variables.
+Check the "Perseverance Calculator 2" repository for the updated version of this calculator.
 
 <strong>Features (TODO):</strong>
 1. Graphing
